@@ -1,0 +1,45 @@
+
+
+<ion-content padding class="body" ng-app="myApp" ng-controller="myCtrl">
+  <div class="one">
+    <p class="header"> Schedule </p>
+   <a (click)="gotopage()"> <img src="../../assets/imgs/alarmbell.png"></a>
+  </div>
+
+  <div class="ticket" (click)="gototicket()">
+    <img src="assets/imgs/ticket3.png" style="postion:relative;left:13px;top:13px;">
+  </div>
+  <!--///////////////////////////////////////////////////////////////////////////////////////////-->
+
+  <ion-segment>
+      <ion-segment-button value="25oct" style="color: white;" id="25oct" (click)="go($event)">
+          25oct, 2018
+      </ion-segment-button>
+      <ion-segment-button value="26oct" style="color: white;" id="26oct"  (click)="go($event)">
+          26oct, 2018
+      </ion-segment-button>
+      <ion-segment-button value="27oct" style="color: white;" id="27oct"  (click)="go($event)">
+          27oct, 2018
+        </ion-segment-button>
+    </ion-segment>
+      <!--///////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+      <div class="info">
+       <div  *ngFor="let schedule of display_list" >
+          <!-- <ion-icon ios="ios-done-all" md="md-done-all" class="icon1"></ion-icon> -->
+          <ion-icon ios="ios-done-all" md="md-done-all" class="icon1" style="color:blue;"></ion-icon>
+          <div class="divinner" (click)=go_to_session(schedule.session_name,schedule.session_date,schedule.start_time,schedule.end_time,schedule.location,schedule.speaker_name)>
+            <p class="time"> {{schedule.start_time}} : {{schedule.end_time}}</p>
+            <p class="inform"> {{schedule.session_name}} </p>
+          </div>
+          <ion-toggle [disabled]="!notifictaion_enable"checked="{{schedule.is_checked}}" id="{{schedule.session_id}}" (ionChange)="ischecked($event,schedule.session_id,schedule.session_name,schedule.index,schedule.start_time,schedule.end_time,schedule.session_date)" ></ion-toggle>
+     
+       <br> <br> <br> <br> <br> <br> <br>
+       </div>
+
+      </div>
+   
+     <!-- <hr style="position:relative;top:-180px;"> -->
+ </ion-content>
+ 

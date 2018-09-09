@@ -1,0 +1,60 @@
+page-editprofile {
+   
+    .one
+    {
+        background-color: #001133;
+        width: 130%;
+        height: 60px;
+        margin: -16px;
+        margin-bottom: 20px;
+    }
+    .header
+    {
+          font-size: 20px;
+           color: white;
+            position: relative;
+            left: 55px;
+            top: 1px;
+            display: inline-block;
+            font-weight: -130px;
+        
+    }
+
+    .one p{
+        display: inline-block;
+        color: white;
+        font-size: 17px;
+        margin-left: 21px;
+        position: relative;
+        top: 5px;
+    }
+
+    .avatar{
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        margin-left: 15px;
+    }
+    label{
+        position: relative;
+        top: -30px;
+        left: 15px;
+        color: gray;
+    }
+    .button2{
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background: linear-gradient(140deg,#000033, #000d1a,#006680);
+        position: relative;
+        top: -10px;
+        left: -110px;
+    }
+    .email {
+         position: relative;
+         left: 210px;
+        // text-align: right;
+        color: gray;
+        font-size: 12px;
+    }
+}

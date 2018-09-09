@@ -1,0 +1,7 @@
+{
+  "name": "spaceapps",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

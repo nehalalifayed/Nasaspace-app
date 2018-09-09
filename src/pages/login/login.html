@@ -1,0 +1,32 @@
+
+
+<ion-content padding>
+
+  <a (click)="gotowelcome()"><ion-icon ios="ios-arrow-back" md="md-arrow-back" ></ion-icon></a>
+ 
+   <br> 
+   <br> 
+   <br> 
+   <br>
+   <img src="assets/imgs/nasaCairologo.png" width="100"  height="100">
+ <ion-list>
+ 
+   
+   <ion-item>
+     <ion-label stacked>Email</ion-label>
+     <ion-input type="email" value="" [(ngModel)]="userData.Email" ></ion-input>
+   </ion-item>
+ 
+   <ion-item>
+     <ion-label stacked>Password</ion-label>
+     <ion-input type="password" [(ngModel)]="userData.password"></ion-input>
+   </ion-item>
+   
+  
+    <button ion-button id="button1" (click)="login()" >Log in </button>
+ </ion-list>
+  <a (click)="forgetpass()" class="xo"> forget the password ?</a>
+  
+  <p style="color:#666666;" class="fixed"> Don't have an account ? <a class="span" (click)="Register()"> register</a> </p>
+ </ion-content>
+ 

@@ -1,0 +1,57 @@
+page-settings {
+    .body 
+    {
+        background-color: #f2f2f2;
+    }
+    .one
+    {
+        background-color: #001133;
+        width: 130%;
+        height: 60px;
+        margin: -16px;
+        margin-bottom: 20px;
+    }
+    .header
+    {
+          font-size: 20px;
+           color: white;
+            position: relative;
+            left: 95px;
+            top: 1px;
+            display: inline-block;
+            font-weight: -130px;
+        
+    }
+    ion-icon 
+    {
+        padding: 15px;
+        color: white;
+        display: inline;
+        position: relative;
+        top: -2px;
+        left: 5px;
+        zoom: 1.2;
+    }
+
+    .notify{
+        display: inline-block;
+        margin-left: 20px;
+        // font-size: 18px;
+    }
+    ion-toggle{
+       position: relative;
+       top: -44px;
+       left: 270px;
+    }
+    hr{
+        position: relative;
+        top: -35px;
+    }
+    .share{
+        margin-left: 20px;
+        // font-size: 18px;
+        position: relative;
+        top: -25px;
+    }
+
+}

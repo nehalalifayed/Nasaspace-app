@@ -1,0 +1,29 @@
+
+<ion-content padding class="body">
+  <div class="one">
+    <a (click)="back()">  <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>  </a>
+    <p class="header"> Contact Us </p>
+  </div>
+
+
+  <div class="main">
+    <img src="../../assets/imgs/satellite.png">
+    <br> <br>
+    <ion-item>
+      <ion-label stacked>Title</ion-label>
+      <ion-input type="text" value=""  [(ngModel)]="emailSubject"></ion-input>
+    </ion-item>
+
+
+    <br>
+    <ion-item>
+      <ion-label stacked>Message</ion-label>
+      <ion-input type="text" value=""  [(ngModel)]="emailBody"></ion-input>
+    </ion-item>
+  <br>
+
+    <div class="nav">
+    <img (click)="composeEmail()" src="../../assets/imgs/send.png">
+    </div>
+  </div>
+</ion-content>

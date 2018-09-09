@@ -1,0 +1,26 @@
+<ion-content padding class="body">
+   <ion-img src="../../assets/imgs/events.jpg"class="image" ></ion-img>
+   <div class="layer">
+    </div>
+    
+
+    <div class="header">
+        <a (click)="goback()">  <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>  </a>
+        <label> New Title </label>
+    </div>
+
+    <p class="nasa"> #SpaceAppcairo</p>
+    <p class="nasa" style="position:relative;top:-240px;">2016</p>
+
+
+    <p class="txt">
+        {{title}}
+    </p>
+    <hr>
+
+   <div class="iocons">
+    <img src="../../assets/imgs/facebook.png"style="position:relative;top:3px;" (click)="facebook()">
+    <img src="../../assets/imgs/twitter.png" (click)="twitter()">
+    <img src="../../assets/imgs/linkedin.png" (click)="linkedin()">
+  </div>
+</ion-content>

@@ -1,0 +1,223 @@
+
+<ion-content padding class="body">
+<div class="info">
+<p >
+  Before filling this form: <br>
+1) Make sure that all the team members are registered in Cairo's Page on the global website <br>
+2) Team members' emails must be the same as the emails used to register on global website<br>
+If you have any problems <a (click)="gotocontact()">Contact us </a>
+</p>
+</div>
+
+
+<form class="form"  [formGroup]= "CreateTeamForm" padding (ngSubmit)="createTeam(CreateTeamForm.value)">
+   
+<ion-item>
+    <ion-label stacked style="color:black;">Team Name</ion-label>
+    <ion-input type="text" value=""  required formControlName="name"  ></ion-input>
+  </ion-item>
+
+  <div class="validation-errors" padding>
+    <ng-container *ngFor="let validation of validation_messages.field">
+      <div class="error-message" *ngIf="CreateTeamForm.get('name').hasError(validation.type) && (CreateTeamForm.get('name').dirty || CreateTeamForm.get('name').touched)" >
+        {{ validation.message }}
+      </div>
+    </ng-container>
+</div>
+
+<br>
+
+  <ion-item>
+      <ion-label stacked style="color:black;">Team Member 1</ion-label>
+      <ion-input required formControlName="email1" type="email" value=""placeholder="email"  ></ion-input>
+    </ion-item>
+
+    <div class="validation-errors" padding>
+      <ng-container *ngFor="let validation of validation_messages.email">
+        <div class="error-message" *ngIf="CreateTeamForm.get('email1').hasError(validation.type) && (CreateTeamForm.get('email1').dirty || CreateTeamForm.get('email1').touched)" >
+          {{ validation.message }}
+        </div>
+      </ng-container>
+</div>
+
+    <br>
+    <ion-item>
+        <ion-label stacked style="color:black;">Team Member 2</ion-label>
+        <ion-input required formControlName="email2" type="email" value=""placeholder="email" ></ion-input>
+      </ion-item>
+
+      <div class="validation-errors" padding>
+        <ng-container *ngFor="let validation of validation_messages.email">
+          <div class="error-message" *ngIf="CreateTeamForm.get('email2').hasError(validation.type) && (CreateTeamForm.get('email2').dirty || CreateTeamForm.get('email2').touched)" >
+            {{ validation.message }}
+          </div>
+        </ng-container>
+  </div>
+  
+      <br>
+      <ion-item>
+          <ion-label stacked style="color:black;">Team Member 3</ion-label>
+          <ion-input required formControlName="email3" type="email" value=""placeholder="email"  ></ion-input>
+        </ion-item>
+        <div class="validation-errors" padding>
+          <ng-container *ngFor="let validation of validation_messages.email">
+            <div class="error-message" *ngIf="CreateTeamForm.get('email3').hasError(validation.type) && (CreateTeamForm.get('email3').dirty || CreateTeamForm.get('email3').touched)" >
+              {{ validation.message }}
+            </div>
+          </ng-container>
+    </div>
+
+
+
+        <br>
+        <ion-item>
+            <ion-label stacked style="color:black;"> Team Member 4</ion-label>
+            <ion-input  formControlName="email4" type="email" value=""placeholder="email(optional)" ></ion-input>
+          </ion-item>
+
+          <div class="validation-errors" padding>
+            <ng-container *ngFor="let validation of validation_messages.email">
+              <div class="error-message" *ngIf="CreateTeamForm.get('email4').hasError(validation.type) && (CreateTeamForm.get('email4').dirty || CreateTeamForm.get('email4').touched)" >
+                {{ validation.message }}
+              </div>
+            </ng-container>
+      </div>
+          <br> <ion-item>
+              <ion-label stacked style="color:black;">Team Member 5</ion-label>
+              <ion-input  formControlName="email5" type="email" value=""placeholder="email(optional)"  ></ion-input>
+            </ion-item>
+
+            <div class="validation-errors" padding>
+              <ng-container *ngFor="let validation of validation_messages.email">
+                <div class="error-message" *ngIf="CreateTeamForm.get('email5').hasError(validation.type) && (CreateTeamForm.get('email5').dirty || CreateTeamForm.get('email5').touched)" >
+                  {{ validation.message }}
+                </div>
+              </ng-container>
+        </div>
+<br>
+            <ion-item>
+                <ion-label stacked style="color:black;">Video URL </ion-label>
+                <ion-input type="text" value="" formControlName="video"  ></ion-input>
+              </ion-item>
+
+              <br> <br>
+
+
+            <ion-list>
+                <ion-item>
+                  <ion-label style="color:#153f84;">Education Level</ion-label>
+                  <ion-select  required formControlName="education"  >
+                    <ion-option value="Undergraduate/Graduate/PostGraduate">Undergraduate/Graduate/PostGraduate </ion-option>
+                    <ion-option value="School">School</ion-option>
+                    <ion-option value="ITI">ITI</ion-option>
+                </ion-select>
+                </ion-item>
+              </ion-list>
+
+              <div class="validation-errors" padding>
+                <ng-container *ngFor="let validation of validation_messages.field">
+                  <div class="error-message" *ngIf="CreateTeamForm.get('education').hasError(validation.type) && (CreateTeamForm.get('education').dirty || CreateTeamForm.get('education').touched)" >
+                    {{ validation.message }}
+                  </div>
+                </ng-container>
+            </div>
+
+              <ion-list>
+                  <ion-item>
+                    <ion-label style="color:#153f84;">Challenge Track </ion-label>
+                    <ion-select required formControlName="track"  >
+                        <ion-option value="0">The Earth and Us</ion-option>
+                        <ion-option value="1">Planetary Blues</ion-option>
+                        <ion-option value="2">Warning! Danger Ahead!</ion-option>
+                        <ion-option value="3">Our Ecological Neighborhood</ion-option>
+                        <ion-option value="4">Ideate and Create!</ion-option>
+                  </ion-select>
+                  </ion-item>
+                </ion-list>
+                <div class="validation-errors" padding>
+                  <ng-container *ngFor="let validation of validation_messages.field">
+                    <div class="error-message" *ngIf="CreateTeamForm.get('track').hasError(validation.type) && (CreateTeamForm.get('track').dirty || CreateTeamForm.get('track').touched)" >
+                      {{ validation.message }}
+                    </div>
+                  </ng-container>
+              </div>
+
+
+                <ion-list>
+                    <ion-item>
+                      <ion-label style="color:#153f84;">Challenge Name </ion-label>
+                      <ion-select required formControlName="challengeName"  >
+                            <ion-option value="Lets go to the Beach">Let's go to the Beach!</ion-option>
+                            <ion-option value="You are my Sunshine">You are my Sunshine</ion-option>
+                            <ion-option value="Whats for Dinner">Whatâ€™s for Dinner?</ion-option>
+					              		<ion-option value="Live Smart">Live Smart</ion-option>
+						              	<ion-option value="Pilots Plus">Pilots Plus</ion-option>
+                    </ion-select>
+                    </ion-item>
+                  </ion-list>
+
+                  <div class="validation-errors" padding>
+                    <ng-container *ngFor="let validation of validation_messages.field">
+                      <div class="error-message" *ngIf="CreateTeamForm.get('challengeName').hasError(validation.type) && (CreateTeamForm.get('challengeName').dirty || CreateTeamForm.get('challengeName').touched)" >
+                        {{ validation.message }}
+                      </div>
+                    </ng-container>
+                </div>
+
+                  <br> <br> 
+
+
+                    <ion-label style="color:#2e405b">Idea in Brief (500 characters MAX)</ion-label>
+                   <ion-textarea placeholder="Enter a description" maxlength="500" rows="5" cols="50" required formControlName="idea" ></ion-textarea>
+                   <div class="validation-errors" padding>
+                    <ng-container *ngFor="let validation of validation_messages.field">
+                      <div class="error-message" *ngIf="CreateTeamForm.get('idea').hasError(validation.type) && (CreateTeamForm.get('idea').dirty || CreateTeamForm.get('idea').touched)" >
+                        {{ validation.message }}
+                      </div>
+                    </ng-container>
+                </div>
+  
+                   <ion-label style="color:#2e405b">Hardware needed to implement your Idea</ion-label>
+                   <ion-textarea placeholder=" Raspberry Pi, Arduino,LilyPad, Sensors...etc" maxlength="500" rows="5" cols="50" required formControlName="HW"></ion-textarea>
+                    <br> <br>
+                    <div class="validation-errors" padding>
+                      <ng-container *ngFor="let validation of validation_messages.field">
+                        <div class="error-message" *ngIf="CreateTeamForm.get('HW').hasError(validation.type) && (CreateTeamForm.get('HW').dirty || CreateTeamForm.get('HW').touched)" >
+                          {{ validation.message }}
+                        </div>
+                      </ng-container>
+                  </div>
+
+                   <ion-item>
+                      <ion-label stacked style="color:black;"> Precentage of work done </ion-label>
+                      <ion-input type="number" value="" required formControlName="work" ></ion-input>
+                    </ion-item>
+                    <div class="validation-errors" padding>
+                      <ng-container *ngFor="let validation of validation_messages.field">
+                        <div class="error-message" *ngIf="CreateTeamForm.get('work').hasError(validation.type) && (CreateTeamForm.get('work').dirty || CreateTeamForm.get('work').touched)" >
+                          {{ validation.message }}
+                        </div>
+                      </ng-container>
+                  </div>
+
+                    <ion-item>
+                        <ion-label stacked style="color:black;"> contact number </ion-label>
+                        <ion-input type="number" value="" required formControlName="contact"  ></ion-input>
+                      </ion-item>
+
+                      <div class="validation-errors" padding>
+                        <ng-container *ngFor="let validation of validation_messages.field">
+                          <div class="error-message" *ngIf="CreateTeamForm.get('contact').hasError(validation.type) && (CreateTeamForm.get('contact').dirty || CreateTeamForm.get('contact').touched)" >
+                            {{ validation.message }}
+                          </div>
+                        </ng-container>
+                    </div>
+
+
+                      <button [disabled]="!CreateTeamForm.valid" ion-button id="button1" type="submit">Submit</button>
+            
+
+</form>
+
+
+</ion-content>

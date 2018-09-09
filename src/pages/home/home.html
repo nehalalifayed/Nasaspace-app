@@ -1,0 +1,51 @@
+
+<ion-content padding class="body">
+  <div class="one">
+    <!-- <a (click)="goto()">  <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>  </a> -->
+    <p class="header"> Spaceapp<span>cairo</span></p>
+   <a (click)="gotopage()"> <img src="../../assets/imgs/alarmbell.png"></a>
+  </div>
+ <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+   <div class="two">
+    <img src="../../assets/imgs/map.png" style="position:relative;left:20px;top:15px;">
+    <div style="display: inline;">
+    <label>Nile University , Giza ,<br>  </label>
+    <label style="margin-left:30px;"> 6 october city</label>
+  </div>
+  <a class="links" href="https://www.google.com.eg/maps/place/Nile+University/@30.0276899,31.0090619,13z/data=!4m8!1m2!2m1!1snile+university!3m4!1s0x14585754b9cba23f:0xdfbc09a0a87f3e86!8m2!3d30.0119686!4d30.9876541&output=embed"  target="_blank" > Open map </a>
+  <ion-icon ios="ios-arrow-dropright" md="md-arrow-dropright" style="color:#33adff;" class="arrow"></ion-icon>
+  <br>
+  <img src="../../assets/imgs/time.png" style="position:relative;left:20px;top:15px;">
+  <label style="position:relative;top:7px;"> 29 OCT 2018 , 30 OCT 2018</label>
+  <br> <br>
+  <hr>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <p style="color:black;font-size: 12px;position: relative;left: 9px;">Event information </p>
+    <p class="moreinfo" style=" word-wrap: break-word;" >this is just some talking this isjust some talking this is just some talking this is just some talking this is just some talking this is just some talking
+        this is just some talking this is just some talking this is just some talking this is just some talking this is just some talking .
+    </p>
+
+    <a class="links" (click)="gotomore()" style="position:relative;left:270px;">  more </a>
+  <ion-icon ios="ios-arrow-dropright" md="md-arrow-dropright" style="color:#33adff;" class="arrow2"></ion-icon>
+  </div>
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+  <div class="events" *ngFor="let title of titlesList" (click)="gotoTitle(title.title_body)">
+   <p class="time">{{title.time}}</p>
+   <br>
+   <img src="../../assets/imgs/events.jpg" height="70" width="70" class="eventimg"> 
+   <p  class="eventtitle"> {{title.title_name}} </p>
+   <p class="description">{{title.sub_title}} </p>
+  </div>
+
+
+ <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+ <div class="ticket" (click)="gototicket()">
+   <img src="assets/imgs/ticket3.png" style="postion:relative;left:13px;top:13px;">
+ </div>
+ <!--//////////////////////////////////////////////////////////tabs/////////////////////////////////////////////////////////////////////////////////////-->
+ 
+</ion-content>

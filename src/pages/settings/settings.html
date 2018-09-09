@@ -1,0 +1,15 @@
+
+
+<ion-content padding class="body">
+  <div class="one">
+    <a (click)="back()">  <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>  </a>
+    <p class="header">  Settings  </p>
+  </div>
+
+  <p class="notify">Notifications </p>
+  <ion-toggle checked="{{notification}}" (ionChange)="ischecked($event)" id='1'></ion-toggle>
+  <hr>
+
+  <p class="share" (click)="logout()">Logout </p>
+
+</ion-content>

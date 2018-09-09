@@ -1,0 +1,58 @@
+<ion-content padding class="body">
+  <div class="one">
+    <a (click)="goto_alert()">  <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>  </a>
+    <p class="header"> Alert </p>
+  </div>
+
+  <!-- <div class="speaker">
+    <img src="../../assets/imgs/speaker.png" class="speakerimg">
+    <label><span style="font-weight:bold;">Session name</span> will start after five minutes</label>
+  </div> -->
+  <div class="speaker" *ngFor="let alert of AlertList" >
+    <img src="../../assets/imgs/speaker.png" class="speakerimg"> 
+    <div style="margin-left: 40px;position:relative;top: -20px;">
+    <label> {{alert.description}}</label>
+  </div>
+    <br>
+    <hr>
+    
+   </div>
+  
+  <!-- <div>
+    <img src="../../assets/imgs/alarm-clock.png" class="alarmimg" >
+    <div id="any">
+    <p class="alarm">
+      this is adumpy text  this is adumpy text  this is adumpy text  this is adumpy text  this is adumpy text  this is adumpy text  this is adumpy text
+      this is adumpy text this is adumpy text this is adumpy text this is adumpy text 
+     {{Alert.description}}
+    </p>
+  </div>
+  </div> -->
+  <div *ngFor="let promotion of PromotionList">
+    <div class="xx">
+     <img src="../../assets/imgs/{{promotion.sponsor}}.jpg" class="avatar">
+     <div class="div">
+     <p  id="nn">Promotions</p>
+     <p id="nnn"> 
+       <!-- this is a dumpy text thdumpy text this is a dumpy text this is a dumpy text this is a dumpy text this is a dumpy text -->
+            {{promotion.description}}
+    </p>
+    </div>
+    <br>
+  </div>
+</div>
+  
+    <!-- <div *ngFor="let promotion of PromotionList">
+     <img  src="../../assets/imgs/{{promotion.sponsor}}.jpg"   class="avatar">
+     <div class="div">
+     <p  id="nn">Promotions</p>
+     <p id="nnn"> 
+       this is a dumpy text this is a dumpy text this is a dumpy text this is a dumpy text this is a dumpy text this is a dumpy text this is a dumpy text 
+      {{promotion.description}}
+      </p>
+    </div>
+    <hr>
+    <br>
+  </div> -->
+
+</ion-content>

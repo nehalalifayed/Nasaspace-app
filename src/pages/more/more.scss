@@ -1,0 +1,80 @@
+page-more {
+    .one
+    {
+        width: 120%;
+        height: 140px;
+        background-color: white;
+        // border: 1px solid black;
+        margin: -9px;
+        padding: -15px;
+       padding-right: -10px;
+       position: relative;
+       top: 4px;
+       
+    }
+    .body
+    {
+        background-color: #f2f2f2;
+    }
+    .profile
+    {
+        border-radius: 50%;
+        margin-left: 140px;
+        margin-top: 18px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .two , .three 
+    {
+        margin-left: 132px;
+    }
+
+    .two{
+        font-weight: bold;
+        color: #031533;
+        position: relative;
+        top: -5px;
+    }
+
+    .three
+    {
+        color:#808080;
+        position: relative;
+        top: -7px;
+    }
+
+    .middle
+    {
+        width: 120%;
+        height: 45px;
+        background-color: white;
+        margin: -9px;
+        margin-top: 15px;
+    }
+
+  .links , .links2
+   {
+    font-weight: bold;
+    color: #031533;
+    position: relative;
+    top: 12px;
+    left:25px;
+    text-decoration: none;
+   }
+   .links2
+   {
+    color:#808080;
+   }
+   .icon
+   {
+    margin: 9px;
+    margin-left: 20px;
+    float: left;
+   }
+
+   .m img 
+   {
+       margin-left: 34px;
+   }
+}

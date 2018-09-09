@@ -1,0 +1,30 @@
+<ion-content padding class="body">
+
+  <div class="one">
+    <a (click)="goto()">  <ion-icon ios="ios-arrow-back" md="md-arrow-back" ></ion-icon>  </a>
+    <p class="header"> {{speaker_name}}</p>
+  </div>
+
+  <div class="two">
+       <img src="../../assets/imgs/speaker.jpg" class="ion-avatar">
+     <p class="position">
+     {{jop_title}}
+    </p>
+  </div>
+
+  <div class="three">
+     <p style="color: #33ccff;">Biography</p>
+     <p style="color:gray;"> {{description}}
+     </p>
+  </div>
+
+  <br>
+  
+  <div class="four">
+   <hr>
+     <img (click)="composeEmail()" src="../../assets/imgs/email.png">
+   
+  </div>
+
+ 
+</ion-content>

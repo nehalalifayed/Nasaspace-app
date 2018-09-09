@@ -1,0 +1,29 @@
+
+
+
+
+<ion-content padding>
+  <div class="one">
+    <a (click)="goto()">  <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>  </a>
+    <h3>Reset password</h3>
+  </div>
+  <br> 
+  <form class="form"  [formGroup]= "ResetPasswordForm" padding (ngSubmit)="doResetPass(ResetPasswordForm.value)">
+        
+  <ion-item>
+      <ion-label stacked>Enter Your Email Here </ion-label>
+      <ion-input required formControlName="email" type="email" value="" [(ngModel)]="userEmail.email" ></ion-input>
+    </ion-item>
+
+    <div class="validation-errors" padding>
+      <ng-container *ngFor="let validation of validation_messages.email">
+        <div class="error-message" *ngIf="ResetPasswordForm.get('email').hasError(validation.type) && (ResetPasswordForm.get('email').dirty || ResetPasswordForm.get('email').touched)" >
+          {{ validation.message }}
+        </div>
+      </ng-container>
+</div>
+ 
+    <button ion-button id="button1" type="submit" [disabled]="!ResetPasswordForm.valid" >reset</button>
+  </form>
+
+  </ion-content>

@@ -1,0 +1,64 @@
+page-title {
+    .body 
+    {
+        padding: 0;
+    }
+   .image
+   {
+    width: 100vw;
+       height: 190px;
+      position: relative;
+      top: -16px;
+      left: -16px;
+    
+   }
+   .layer {
+    background-color: rgba(0, 204, 204 , 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:190px;
+}
+
+.header 
+{
+    background-color: transparent;
+    position: relative;
+    top: -200px;
+}
+ion-icon 
+{
+    color: white;
+    // size: 150%;
+    zoom: 1.3;
+}
+label 
+{
+margin-left: 30px;
+color: white;
+font-size: 20px;
+}
+.nasa 
+{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: -205px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.txt
+{
+    color: gray;
+    font-size: 12px;
+    line-height: 150%;
+    position: relative;
+    top: -180px;
+    margin-bottom: -150px;
+}
+.iocons img
+{
+    margin-left: 50px;
+}
+}

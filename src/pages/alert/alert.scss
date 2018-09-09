@@ -1,0 +1,96 @@
+page-alert {
+    .body 
+    {
+        background-color: #f2f2f2;
+    }
+    .one
+    {
+        background-color: #001133;
+        width: 130%;
+        height: 60px;
+        margin: -16px;
+        margin-bottom: 20px;
+    }
+    .header
+    {
+          font-size: 20px;
+           color: white;
+            position: relative;
+            left: 105px;
+            top: 1px;
+            display: inline-block;
+            font-weight: -130px;
+        
+    }
+    ion-icon 
+    {
+        padding: 15px;
+        color: white;
+        display: inline;
+        position: relative;
+        top: -2px;
+        left: 5px;
+    }
+    .speakerimg 
+    {
+        position: relative;
+        top: 7px;
+    }
+    label
+    {
+        margin-left: 10px;
+    }
+    .alarmimg 
+    {
+        position: relative;
+        top: 10px;
+        float: left;
+       
+    }
+    .alarm 
+    {
+        position: relative;
+        left: 40px;
+        top: -37px;
+        line-height: 19px;
+        font-size: 13px;
+        color: black;
+    }
+    .avatar 
+    {
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        position: relative;
+        left: 5px;
+        float: left;
+    }
+    #any 
+    {
+        padding-right: 100px;
+    }
+    .div
+    {
+       position: relative;
+       left: -35px;
+       padding-right: 90px;
+       margin-left: 30px;
+
+    }
+    #nn 
+    {
+        color:cornflowerblue;font-size: 13px;
+        position:relative;left: 55px;top: -12px;
+    }
+    #nnn
+    {
+        color: black;
+        font-size: 13px;
+        position: relative;
+        left: 60px;
+        top: -15px;
+    }
+
+    
+    
+}

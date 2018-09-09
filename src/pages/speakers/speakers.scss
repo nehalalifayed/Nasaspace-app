@@ -1,0 +1,97 @@
+page-speakers {
+    .body
+    {
+        background-color: #f2f2f2;
+        
+    }
+   .x
+    {
+        position: relative;
+        left: 220px;
+        top: 10px;
+    }
+.header
+ {
+       font-size: 20px;
+        color: white;
+         position: relative;
+         left: 130px;
+         top: 1px;
+         display: inline-block;
+     
+ }
+ .one
+ {
+     background-color: #001133;
+     width: 130%;
+     height: 60px;
+     margin: -16px;
+    //  margin-bottom: 20px;
+ }
+
+ .ticket 
+ {
+     border-radius: 50%;
+     position: fixed;
+     bottom: 70px;
+     right: 25px;
+     height: 50px;
+     width: 50px;
+     background: linear-gradient(140deg,#000033, #000d1a,#006680);
+    //  box-shadow: 10px 10px  #f2f2f2;
+ }
+
+ion-segment 
+{
+    position: relative;
+        top: 16px;
+        background-color: #001133;
+        width: 130%;
+            left: -16px;
+            padding-right: 80px;
+            
+}
+.ion-segment-button 
+{
+    color: white;
+
+}
+
+.spe {
+height: 150px;
+width: 150px;
+background-color: white;  
+position: relative;
+top: 12px;  
+float: left;
+padding: 20px;
+border-radius: 15px;
+margin-right: 12px;
+margin-bottom: 15px;
+}
+
+.spe img {
+ border-radius: 50%;
+ height: 50px;
+ width: 50px;
+ position: relative;
+ left: 27px;
+ top: -10px;
+}
+
+.spe p {
+    color: gray;
+    font-size: 12px;
+    position: relative;
+    top: -18px;
+    // left: 8px;
+    text-align: center;
+}
+
+.spe .name
+ {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+}

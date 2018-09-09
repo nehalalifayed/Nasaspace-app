@@ -1,0 +1,67 @@
+page-sponsor {
+    .body 
+    {
+        background-color: white;
+    }
+    .one
+    {
+        background-color: #001133;
+        width: 130%;
+        height: 60px;
+        margin: -16px;
+        margin-bottom: 20px;
+    }
+   .header
+    {
+          font-size: 20px;
+           color: white;
+            position: relative;
+            left: 55px;
+            top: 1px;
+            display: inline-block;
+            font-weight: -130px;
+        
+    }
+    ion-icon 
+    {
+        padding: 15px;
+        color: white;
+        display: inline;
+        position: relative;
+        top: 0px;
+        left: 5px;
+        zoom: 1.2;
+    }
+    .main , .gold , .silver {
+        margin-bottom: 40px;
+    }
+    .main p , .gold p , .silver p
+    {
+        color: #0099ff;
+        font-size: 14px;
+        margin-left : 20px;
+    }
+    .main img , .gold img , .silver img
+     {
+        margin-left: 30px;
+        height:60px;
+         width:70px;
+         animation-name: example;
+         animation-duration: 2s;
+    }
+
+
+    
+
+
+  
+  @keyframes example { 
+   0% {opacity: 0; margin-left: 40px; }
+   25% {opacity: 0.3;}
+   50% {opacity: 0.6; margin-left: 60px;}
+   75% {opacity: 0.9;margin-left: -40px;}
+   100% {opacity: 1.0; }
+  }
+  
+  
+}

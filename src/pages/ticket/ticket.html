@@ -1,0 +1,29 @@
+ <ion-content class="body">
+  <div class="one">
+    <a (click)="goto()">  <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>  </a>
+    <p class="header">My Ticket </p>
+  </div>
+
+  
+  <div class="ticket">
+    <p  id="number"> Ticket No.</p>
+
+    <p id="name">{{user_id}}</p>
+  
+
+  <!--QR SCANNER --------------------------------------------------------------------------------->
+ 
+  
+  <button ion-button  icon-left (click)="createCode()">Show QR Code</button>
+  <br><br> <br> <br>
+  <ion-card *ngIf="createdCode">
+    <ngx-qrcode [qrc-value]="createdCode"></ngx-qrcode>
+    <ion-card-content>
+      <!-- <p>Value: {{ createdCode }}</p> -->
+    </ion-card-content>
+  </ion-card>
+
+</div>
+ 
+</ion-content>  
+
